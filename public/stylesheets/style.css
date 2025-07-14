@@ -1,0 +1,295 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Background and Layout */
+body.main-body,
+.center-wrapper {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #f0f4f8, #e0ecff);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* Container */
+.container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  max-width: 520px;
+  width: 100%;
+  text-align: center;
+}
+.container2 {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  max-width: 1020px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Headings & Text */
+.title {
+  font-size: 1.75rem;
+  color: #1e3a8a;
+  margin-bottom: 1rem;
+}
+
+.description,
+.auth-links,
+.greeting {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 1rem;
+}
+
+.username {
+  font-weight: bold;
+  color: #0f172a;
+}
+
+/* Links */
+.link,
+.sublink a {
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.link-primary {
+  color: #2563eb;
+}
+
+.link-primary:hover {
+  color: #1d4ed8;
+}
+
+.link-secondary {
+  color: #16a34a;
+}
+
+.link-secondary:hover {
+  color: #15803d;
+}
+
+.sublink {
+  margin-top: 15px;
+}
+
+/* Alert */
+.alert {
+  background-color: #fee2e2;
+  color: #b91c1c;
+  padding: 0.75rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Forms */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  text-align: left;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #374151;
+}
+
+.form-input {
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.form-input:focus {
+  border-color: #2563eb;
+}
+
+/* Form Actions */
+.form-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+/* Buttons */
+.btn {
+  padding: 0.5rem 0.75rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  display: inline-block;
+  text-align: center;
+}
+/* Optional file label styling */
+.current-file {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+.current-file a {
+  font-weight: 600;
+}
+
+.btn-sm {
+  padding: 0.35rem 0.6rem;
+  font-size: 0.8rem;
+}
+
+.btn-primary {
+  background-color: #2563eb;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #1e40af;
+}
+
+.btn-secondary {
+  background-color: #111827;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #000;
+}
+
+.btn-success {
+  background-color: #16a34a;
+  color: white;
+}
+
+.btn-success:hover {
+  background-color: #15803d;
+}
+
+.btn-warning {
+  width: 100%;
+  background-color: #facc15;
+  color: #000;
+}
+
+.btn-warning:hover {
+  background-color: #eab308;
+}
+
+.btn-danger {
+  width: 100%;
+  background-color: #ef4444;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #dc2626;
+}
+.btn-group{
+  display: flex;
+  gap: 4px;
+}
+/* Table Styles */
+.table-wrapper {
+  overflow-x: auto;
+  margin-top: 1.25rem;
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  font-size: 0.95rem;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.styled-table thead {
+  background-color: #1e3a8a;
+  color: #ffffff;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #f9fafb;
+}
+input[type="file"].form-input,
+textarea.form-input {
+  font-family: inherit;
+  resize: vertical;
+}
+/* Utilities */
+.mb-2 {
+  margin-bottom: 0.75rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .styled-table th,
+  .styled-table td {
+    padding: 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  .btn {
+    font-size: 0.85rem;
+  }
+
+  .btn-sm {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  .form-input,
+  .btn {
+    font-size: 0.95rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .description,
+  .auth-links,
+  .greeting {
+    font-size: 0.95rem;
+  }
+}

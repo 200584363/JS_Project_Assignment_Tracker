@@ -1,0 +1,26 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS - CRUD Web Application</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" type="text/css" />
+  </head>
+  <body class="main-body">
+    <div class="container">
+      <h1 class="title">Welcome to Assignment Tracker</h1>
+      <p class="description">This is your online assignment management tool.</p>
+      
+      {{#if user}}
+        <p class="greeting">Hello, <span class="username">{{user.username}}</span>! 
+        Go to <a href="/assignments" class="link link-primary">your assignments</a>.</p>
+      {{else}}
+        <p class="auth-links">
+          <a href="/auth/login" class="link link-secondary">Login</a> 
+          or 
+          <a href="/auth/register" class="link link-secondary">Register</a> 
+          to get started.
+        </p>
+      {{/if}}
+    </div>
+  </body>
+</html>

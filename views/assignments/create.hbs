@@ -1,0 +1,43 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Assignment</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" type="text/css" />
+  </head>
+<body>
+<div class="center-wrapper">
+  <div class="container">
+    <h2 class="title">Create Assignment</h2>
+
+    <form action="/assignments/create" method="POST" enctype="multipart/form-data" class="form">
+      <div class="form-group">
+        <label for="title" class="form-label">Title</label>
+        <input type="text" name="title" id="title" required class="form-input" />
+      </div>
+
+      <div class="form-group">
+        <label for="description" class="form-label">Description</label>
+        <textarea name="description" id="description" class="form-input" rows="4"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="dueDate" class="form-label">Due Date</label>
+        <input type="date" name="dueDate" id="dueDate" required class="form-input" />
+      </div>
+
+      <div class="form-group">
+        <label for="file" class="form-label">Upload File</label>
+        <input type="file" name="file" id="file" class="form-input" />
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn btn-success">Create</button>
+        <a href="javascript:history.back()"><Button class="btn btn-danger">Cancel</Button></a>
+      </div>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>

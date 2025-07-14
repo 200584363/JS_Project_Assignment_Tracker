@@ -1,0 +1,50 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Assignment</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" type="text/css" />
+  </head>
+<body>
+  <div class="center-wrapper">
+  <div class="container">
+    <h2 class="title">Edit Assignment</h2>
+
+    <form action="/assignments/edit/{{assignment._id}}" method="POST" enctype="multipart/form-data" class="form">
+      <div class="form-group">
+        <label for="title" class="form-label">Title</label>
+        <input type="text" name="title" id="title" required class="form-input" value="{{assignment.title}}" />
+      </div>
+
+      <div class="form-group">
+        <label for="description" class="form-label">Description</label>
+        <textarea name="description" id="description" class="form-input" rows="4">{{assignment.description}}</textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="dueDate" class="form-label">Due Date</label>
+        <input type="date" name="dueDate" id="dueDate" required class="form-input" value="{{assignment.dueDate}}" />
+      </div>
+
+      <div class="form-group">
+        {{#if assignment.uploadedFile}}
+          <p class="current-file">
+            Current file:
+            <a href="/uploads/{{assignment.uploadedFile}}" target="_blank" class="link-primary">
+              {{assignment.uploadedFile}}
+            </a>
+          </p>
+        {{/if}}
+        <label for="file" class="form-label">Replace file</label>
+        <input type="file" name="file" id="file" class="form-input" />
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary">Update</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
