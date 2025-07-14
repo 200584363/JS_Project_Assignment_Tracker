@@ -18,7 +18,7 @@ Features Implemented:
 - Database: MongoDB (hosted on Atlas)
 - Authentication: Passport.js with passport-local and passport-github2
 - File Uploads: Multer
-- Deployment: (e.g., Render.com or other cloud hosting)
+- Deployment: Render
 
 ### Technology Stack & Project Structure:
 Here is a list of dependencies installed using npm install and why they are used:
