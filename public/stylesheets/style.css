@@ -207,11 +207,17 @@ body.main-body,
   background-color: #ef4444;
   color: white;
 }
+.btn-danger2 {
+  background: #e83d3d;
+  color: white;
+  font-weight: bold;
+}
 
 .btn-danger:hover {
   background-color: #dc2626;
 }
 .btn-group{
+  justify-content: space-between;
   display: flex;
   gap: 4px;
 }
